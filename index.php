@@ -33,16 +33,19 @@
         <button class="btn btn-lg btn-primary btn-block" type="submit">Shorten</button>
       </form>
 
-	  <div class="well">
-		<h4>To preview a link use <?php echo BASE_HREF; ?><em>preview</em>/<strong>id</strong> instead of <?php echo BASE_HREF; ?><strong>id</strong></h4>
-		<a href="<?php echo BASE_HREF; ?>preview/1" target="_blank"><?php echo BASE_HREF; ?>preview/1</a>
-		
-		<br/><br/><h4>To programmatically shorten URLs with PHP use the following code</h4>	
-		$shorturl = file_get_contents( '<?php echo BASE_HREF; ?>shorten/' . urlencode('http://mylongurl.com') );
-		
-		<br/><br/><h4>To programmatically get the number of referrals with PHP use the following code</h4>
-		$referrals = file_get_contents( '<?php echo BASE_HREF; ?>referrals/' . $shorturl );
-	  </div>
+  	  <div class="well">
+  		  <h4>To preview a link use <?php echo BASE_HREF; ?><em>preview</em>/<strong>id</strong> instead of <?php echo BASE_HREF; ?><strong>id</strong></h4>
+  		  <a href="<?php echo BASE_HREF; ?>preview/1" target="_blank"><?php echo BASE_HREF; ?>preview/1</a>
+  		
+  		  <br/><br/><h4>To programmatically shorten URLs with PHP use the following code</h4>	
+  		  $shorturl = file_get_contents( '<?php echo BASE_HREF; ?>shorten/' . urlencode('http://mylongurl.com') );
+  		
+  		  <br/><br/><h4>To programmatically get the number of referrals with PHP use the following code</h4>
+  		  $referrals = file_get_contents( '<?php echo BASE_HREF; ?>referrals/' . $shorturl );
+  	  </div>
+      <div class="well footerwell">
+        <a href="https://github.com/DeletedScreen/xno.li">GitHub</a> - Created by <a href="http://twitter.com/Deleted_screen">@Deleted_screen</a>
+      </div>
     </div> <!-- /container -->
 
 <!-- jQuery 1.3.2 -->

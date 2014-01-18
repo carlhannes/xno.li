@@ -54,3 +54,8 @@ h4 {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+.footerwell {
+  padding-top:    10px;
+  padding-bottom: 10px;
+}
