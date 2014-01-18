@@ -1,0 +1,20 @@
+DirectoryIndex index.php
+
+# remove the next 3 lines if you see a 500 server error
+php_flag register_globals off
+php_flag magic_quotes_gpc off
+php_value display_errors 0
+
+FileETag none
+ServerSignature Off
+
+Options All -Indexes
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^popular$ popular.php [L]
+RewriteRule ^shorten/(.*)$ shorten.php?longurl=$1 [L]
+RewriteRule ^([0-9a-zA-Z]{1,6})$ shorturl.php?url=$1 [L]
+RewriteRule ^preview/([0-9a-zA-Z]{1,6})$ shorturl.php?preview=$1 [L]
+RewriteRule ^referrals/([0-9a-zA-Z]{1,6})$ shorturl.php?referrals=$1 [L]
+</IfModule>
